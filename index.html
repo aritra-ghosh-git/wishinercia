@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Madam Ji ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Manrope:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="cinematic-background" aria-hidden="true">
+    <span class="background-petal">🌹</span>
+    <span class="background-petal">🌹</span>
+    <span class="background-petal">🌹</span>
+    <span class="background-petal">🌹</span>
+    <span class="background-heart">♥</span>
+    <span class="background-heart">♥</span>
+    <span class="background-heart">♥</span>
+</div>
+
+<div id="themeTransition" aria-hidden="true"></div>
+
+<!-- PUBLIC WISHINERCIA LOGIN -->
+<main id="loginScreen" class="brand-login">
+    <section class="brand-login-card" aria-labelledby="brandTitle">
+        <div class="brand-mark" aria-hidden="true">W</div>
+        <p class="brand-eyebrow">PRIVATE WISHES</p>
+        <h1 id="brandTitle">Wishinercia</h1>
+        <p class="brand-credit">---Created by AG organise</p>
+        <div class="login-divider" aria-hidden="true"></div>
+        <h2>Welcome back</h2>
+        <p class="brand-description">Sign in to open your personal surprise.</p>
+        <label class="sr-only" for="usernameInput">Username</label>
+        <input type="text" id="usernameInput" autocomplete="username" placeholder="Username">
+        <label class="sr-only" for="loginPasswordInput">Password</label>
+        <input type="password" id="loginPasswordInput" autocomplete="current-password" placeholder="Password">
+        <button id="loginBtn" type="button">Sign in <span aria-hidden="true">→</span></button>
+        <p id="loginError" class="login-error" role="alert"></p>
+    </section>
+</main>
+
+<!-- TEMPORARY USER DESTINATION -->
+<main id="noContextScreen" aria-live="polite">
+    <section class="no-context-card">
+        <p class="no-context-label">PRIVATE SPACE</p>
+        <h1>NO CONTEX</h1>
+        <div class="no-context-line" aria-hidden="true"></div>
+        <p>This temporary page will close in <strong id="redirectCountdown">10</strong> seconds.</p>
+        <span class="no-context-return">Returning to Wishinercia…</span>
+    </section>
+</main>
+
+<!-- PASSWORD SCREEN -->
+
+<div id="passwordScreen">
+
+    <div class="password-card">
+
+        <h1 id="privateGreeting">Assalamwalaikum 🥰</h1>
+
+       
+        <input
+        type="password"
+        id="passwordInput"
+        autocomplete="one-time-code"
+        placeholder="Enter Private Password">
+
+        <button id="passwordBtn">
+            Unlock Gift 🎁
+        </button>
+
+        <p id="errorText"></p>
+
+    </div>
+
+</div>
+
+<!-- BACKGROUND MUSIC -->
+
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- WELCOME PAGE -->
+
+<section id="welcomePage">
+
+    <h1>
+        🥰Welcome <span data-profile="name">Guest</span> Madam🥰
+    </h1>
+
+</section>
+
+<!-- RELIGIOUS CINEMATIC INTERLUDE -->
+
+<section id="religiousScene" aria-label="A respectful spiritual interlude">
+
+    <div class="religious-scene scene-allah">
+
+        <div class="golden-aura"></div>
+
+        <img class="allah-sketch" src="images/allah-sketch.jpg" alt="Allah Arabic calligraphy sketch">
+
+    
+
+      
+
+        <audio id="allahAudio" preload="auto">
+            <source src="allah-audio.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
+
+    <div class="religious-scene scene-krishna">
+
+        <div class="golden-aura"></div>
+
+        <img class="flute-sketch" src="images/krishna-flute-sketch.jpg" alt="Krishna flute sketch">
+
+     
+
+     
+
+        <audio id="krishnaAudio" preload="auto">
+            <source src="krishna-audio.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
+
+</section>
+
+<!-- GIFT SCREEN -->
+
+<section id="gift-screen">
+
+    <div class="gift-wrapper">
+
+        <div id="gift-box">
+            🎁
+        </div>
+
+        <h2 class="openText">
+            Open The Box ❤️
+        </h2>
+
+        <p>
+            A little surprise made specially for you...
+        </p>
+
+    </div>
+
+</section>
+
+<!-- MAIN PAGE -->
+
+<section id="main-content">
+    
+    <div class="floating-hearts"></div>
+
+    <h1 id="typewriter"></h1>
+
+    <div class="photo-card">
+
+        <img
+        src="images/profile.jpg"
+        alt="Birthday Girl">
+
+    </div>
+
+    <div id="message-box"></div>
+
+    <button id="nextBtn" class="romantic-btn">
+        ❤️ Next ❤️
+    </button>
+
+</section>
+
+<!-- EMOJI BLAST PAGE -->
+
+<section id="emojiPage">
+
+    <div id="emojiBlastContainer"></div>
+
+</section>
+
+<!-- GALLERY PAGE -->
+
+<section id="galleryPage">
+
+    <h1>
+        📸Photo Dil De Kone Ch Jo
+Luka Ke Si Main Rakhia📸
+    </h1>
+    <div class="slideshow-container">
+
+        <div class="album-hearts" aria-hidden="true"></div>
+
+        <img class="slide"
+        src="images/photo1.jpg">
+
+        <img class="slide"
+        src="images/photo2.jpg">
+
+        <img class="slide"
+        src="images/photo3.jpg">
+
+        <img class="slide"
+        src="images/photo4.jpg">
+
+        <img class="slide"
+        src="images/photo5.jpg">
+
+        <img class="slide"
+        src="images/photo6.jpg">
+
+        <img class="slide"
+        src="images/photo7.jpg">
+
+        <img class="slide"
+        src="images/photo8.jpg">
+
+    </div>
+
+    <button id="voiceBtn"
+    class="romantic-btn">
+
+        💌 Read The Letter 👈
+
+    </button>
+
+</section>
+
+<!-- LOVE LETTER PAGE -->
+
+<section id="voicePage">
+
+    <div class="letter-card">
+
+        <h1>
+            তোমার জন্য একটি চিঠি
+        </h1>
+
+        <p class="letter-intro">মনের কথা, ভালোবাসা আর শুভকামনা দিয়ে লেখা</p>
+
+        <article class="letter-paper">
+            <p class="letter-greeting">প্রিয় লামিসা,</p>
+
+            <p class="letter-placeholder">
+                তোমার হাসির মতো সুন্দর হোক তোমার প্রতিটি দিন।<br><br>
+                তোমার জন্মদিনে রইল আমার আন্তরিক শুভেচ্ছা।
+                জীবনের প্রতিটি পথে তুমি খুঁজে পাও শান্তি,
+                আনন্দ আর অফুরন্ত ভালোবাসা।
+                তোমার মনের সব স্বপ্ন একদিন সত্যি হোক।<br><br>
+                এই ছোট্ট চিঠিটুকু শুধু তোমার জন্য।
+            </p>
+
+            <p class="letter-signoff">
+                ইতি,<br>
+                তোমার শুভাকাঙ্ক্ষী ❤️
+            </p>
+        </article>
+
+        <button
+        id="shayariBtn"
+        class="romantic-btn">
+
+            🌹 Apke Liye Shayari 🌹
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- SHAYARI PAGE -->
+
+<section id="shayariPage">
+
+    <div class="romantic-bg">
+
+        <span>❤️</span>
+        <span>🌹</span>
+        <span>🥰</span>
+        <span>🎁</span>
+        <span>☺️</span>
+
+    </div>
+
+    <h1>
+        ❤️ Sirf Apke Liye ❤️
+    </h1>
+<div class="shayari-box">
+
+<h2>🌹 Shayari 1 🌹</h2>
+
+<p>
+Aaj apki salgirah hai, to dil ki baat keh deta hoon,
+Jo arse se chhupa rakhi thi, aaj woh raaz khol deta hoon.
+Main Aapse mohabbat karta hoon, ye ehsaas kabhi kam na hoga,
+Aur agar Aap meri na bhi hui, to bhi Aap ko chahane ki tamanna kabhi khatam na hoga..🌹✨
+
+</p>
+
+<br><br>
+
+<h2>❤️ Shayari 2 ❤️</h2>
+
+<p>
+Ammi ne kaha tha, 'Beta, nashe se bach ke rehna',
+Main har nashe se bach kar hi raha.
+Magar jab tum saamne aayi, ek baat samajh aayi,
+Mohabbat bhi ek nasha hai, aur main usi mein kho gaya. ✨❤️
+</p>
+
+<br><br>
+
+<h2>🥰 Shayari 3 🥰</h2>
+
+<p>
+Chahe aap mohabbat ka jawab dein ya na dein,
+Hum aapse hi mohabbat karte rahenge.
+Har dam, har jahaan, har haal mein,
+Bas aap hi ko chahte rahenge.❤️
+</p>
+
+<br><br>
+
+<h2>💐 Shayari 4 💐</h2>
+
+<p>
+Aap bas yunhi muskurati rahiye, ke aapki muskurahat hi Hamari khushi hai.
+Humein kya gham, hum to aapki tasveer ke sahare umr guzar sakte hain. ❤️
+</p>
+
+<br><br>
+
+<h2>🎁 Shayari 5 🎁</h2>
+
+<p>
+Humein maloom hai ke qismat ne hamare naam ek saath nahi likhe,
+Shayad zamane aur riwayatein bhi hamare haq mein nahi hain.
+Magar mohabbat hisaab kahan maanti hai,
+Hum kal bhi aapko chahte the, aur aakhri saans tak chahte rahenge. 🌹
+</p>
+
+<br><br>
+
+<button
+id="secretBtn"
+class="romantic-btn">
+
+❤️ One Last Thing ❤️
+
+</button>
+
+<br><br>
+
+<div
+id="secretMessage"
+style="display:none;">
+
+    <h2>
+        🥰 Aap Hamesha Muskurate Rahiye 🥰
+    </h2>
+
+    <p>
+        Bas itni si dua hai ki aapki zindagi
+        hamesha khushiyon se bhari rahe ❤️❤️
+    </p>
+
+</div> 
+
+<br><br><br>
+
+<h1>
+😊 Bas Itna Hi Tha 😊
+</h1>
+
+<p>
+Thank You For Visiting This Little Surprise ❤️
+</p>
+
+<p style="margin-top:40px;font-size:18px;">
+Made With Respect, Dua and Good Wishes ❤️
+</p>
+
+<br><br>
+
+<button id="exitBtn"
+class="romantic-btn">
+
+🌹 Exit 🌹
+
+</button>
+
+</div>
+
+</section>
+
+<!-- FIREBASE SDK + CONFIG (loaded before script.js) -->
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
